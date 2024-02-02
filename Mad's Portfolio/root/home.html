@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+        <link rel="stylesheet" href="..\Template\Template.css">
+        <link rel="stylesheet" href="..\backend\CSS\home.css">
+        <script defer src="..\backend\JavaScript\home.js"></script>
+</head>
+
+<body>
+    <article id="navbar">
+        <nav>
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    Mad's Portfolio
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="..\root\home.html" class="active">Home</a>
+                <a href="..\root\projects.html">Projects</a>
+                <a href="..\root\skills.html">Skills</a>
+                <a href="..\root\educationandwork.html">Education and Work Experience</a>
+                <a href="..\root\contactme.html">Contact Me</a>
+            </div>
+        </nav>
+    </article>
+    <main class="main flow">
+        <h1 class="main__heading">Some More About Me</h1>
+        <div class="main__cards cards">
+            <div class="cards__inner">
+                <div class="cards__card card">
+                    <h2 class="card__heading"><br></h2>
+                    <p class="card__price">Student</p>
+                    <ul role="list" class="card__bullets flow">
+                        <li>I am currently studying software development and CTU training solutions.</li>
+                        <li>As it stands, I am proficient in Python, JavaScript and HTML, and am currently learning C# and GDScript in my own time.</li>
+                    </ul>
+                    <a href="..\root\projects.html" class="card__cta cta">Click here to see some of my projects</a>
+                </div>
+
+                <div class="cards__card card">
+                    <h2 class="card__heading"><br></h2>
+                    <p class="card__price">Interests</p>
+                    <ul role="list" class="card__bullets flow">
+                        <li>I am hoping to go into cyber security in my third year at CTU.</li>
+                        <li>I am currently learning game development in my own time, and am always looking for ways to incorporate what I learn in other areas.</li>
+                        <li>I enjoy learning new things, and am always looking for ways to implement or share what I've learnt.</li>
+                    </ul>
+                    <a href="https://github.com/MadManJosh/MadsProjectsPublic/tree/main/Fighting%20Game/HTML%20Fighting%20Game" class="card__cta cta">Link to a Broswer game I made.</a>
+                </div>
+
+                <div class="cards__card card">
+                    <h2 class="card__heading"><br></h2>
+                    <p class="card__price">Qualifications</p>
+                    <ul role="list" class="card__bullets flow">
+                        <li>I have passed the Certiport international exams for JavaScript, Python and HTML/CSS. </li>
+                        <li>I am a CompTIA certified A+ technician. </li>
+                        <li>I am currently working towards my programming foundation certification at CTU Training Solutions.</li>
+                    </ul>
+                    <a href="https://www.linkedin.com/in/joshua-koch-997542268/" class="card__cta cta">My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="overlay cards__inner"></div>
+        </div>
+    </main>
+</body>
+
+</html>

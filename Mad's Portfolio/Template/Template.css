@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(30, 30, 40);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the navbar */
+
+#navbar nav {
+    display: block;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    z-index: +1;
+}
+
+#navbar .nav-header {
+    display: inline;
+}
+
+#navbar .nav-header .nav-title {
+    display: inline-block;
+    font-size: 32px;
+    color: #d85858;
+    padding: 14px 10px 10px 10px;
+}
+
+#navbar .nav-btn {
+    display: none;
+}
+
+#navbar .nav-links {
+    padding: 1em;
+    display: inline;
+    float: right;
+    font-size: 22px;
+}
+
+#navbar a {
+    color: #efefef;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+#navbar a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(244, 8, 8);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;      
+}
+
+#navbar a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#navbar #nav-check {
+    display: none;
+}
+
+#navbar a.active {
+    background-color: #202020d6;
+    border-radius: 0.7em;
+}
+
+/* Media Query to make the site responsive */
+
+@media (max-width:1050px) {
+    #navbar .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    #navbar .nav-btn label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    #navbar .nav-btn label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #navbar .nav-btn label span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    #navbar .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #000000;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    #navbar .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    #navbar #nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    #navbar #nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    
+}

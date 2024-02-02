@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <link rel="stylesheet" href="..\Template\Template.css">
+  <link rel="stylesheet" href="..\backend\CSS\contactme.css">
+  <script defer src="..\backend\JavaScript\contactme.js"></script>
+</head>
+
+<body>
+  <article id="navbar">
+    <nav>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Mad's Portfolio
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="..\root\home.html">Home</a>
+        <a href="..\root\projects.html">Projects</a>
+        <a href="..\root\skills.html">Skills</a>
+        <a href="..\root\educationandwork.html">Education and Work Experience</a>
+        <a href="..\root\contactme.html" class="active">Contact Me</a>
+      </div>
+    </nav>
+  </article>
+
+  <div class="contact-wrapper">
+
+    <form>
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <input type="submit" value="SUBMIT" />
+    </form>
+
+    <!-- Left contact page -->
+
+    <div class="direct-contact-container">
+
+      <ul class="contact-list">
+        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Johannesburg,
+              Gauteng</span></i>
+        </li>
+
+        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555"
+                title="Give me a call">+27 72 471 6832</a></span></i></li>
+
+        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+                title="Send me an email">joshuakoch2003@outlook.com</a></span></i></li>
+
+      </ul>
+
+      <hr>
+      <ul class="social-media-list">
+        <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <hr>
+
+      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
